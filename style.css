@@ -172,6 +172,9 @@
     margin-left: 50px;
  }
 
+ .orange{
+   color: #D3A265;
+ }
  .main4 #view {
     display: flex;
     flex: 1;
@@ -187,30 +190,37 @@
 
  .frame {
     padding: 40px;
-
  }
 
- .frame img {
-    max-height: auto;
-    max-width: auto;
-    width: 270px;
-    height: 320px;
-    margin-bottom: 20px;
-
+ .image {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px 30px;
  }
 
- .ig {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+ .image img {
+    width: 100%;
  }
 
- .im {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
+ @media screen and (max-width: 800px) {
+    .image {
+       grid-template-columns: auto auto auto;
+    }
  }
+
+ @media screen and (max-width: 500px) {
+    .image {
+       grid-template-columns: auto auto;
+    }
+ }
+
+ @media screen and (max-width: 370px) {
+    .image {
+       grid-template-columns: auto;
+    }
+ }
+
+
 
 
  /* Box-5 */
@@ -488,7 +498,7 @@
  }
 
  @media only screen and (max-width: 370px) {
-    .main4 .ig #im {
+    .main4 #im {
        display: none;
     }
 
