@@ -195,7 +195,7 @@
  .image {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 30px 30px;
+    grid-gap: 30px 30px;
  }
 
  .image img {
